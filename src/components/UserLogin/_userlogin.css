@@ -1,0 +1,30 @@
+.userlogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.avatar-wrapper {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.avatar-wrapper .avatar {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.logout-btn {
+    background: #fff;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 16px;
+    padding: 5px 10px;
+    cursor: pointer;
+}

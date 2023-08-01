@@ -1,0 +1,17 @@
+.logo {
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.logo span:last-child {
+    display: inline-block;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+@media screen and (min-width: 768px) {
+    .logo {
+        color: #000;
+    }
+}
