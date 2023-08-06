@@ -3,7 +3,7 @@ import { Navigate } from 'react-router-dom';
 
 const PrivateRoute = ({ children }) => {
 	const { user } = useSelector((state) => state.userSlice);
-	if (!Object.keys(user).length) {
+	if (user !== null && !user.email) {
 		return <Navigate to='/' />;
 	}
 	return children;
