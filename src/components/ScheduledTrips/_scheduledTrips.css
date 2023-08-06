@@ -1,0 +1,7 @@
+.scheduled_trips {
+    display: flex;
+    flex: 1 1 65%;
+    gap: 50px;
+    overflow-x: auto;
+    padding-bottom: 30px;
+}

@@ -1,0 +1,46 @@
+.today_weather {
+    color: #fff;
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.today_weather__weather {
+    position: relative;
+    margin: 20px 0;
+}
+
+.today_weather__day {
+    font-weight: 600;
+
+}
+
+.today_weather__icon {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-125px, -50%);
+}
+
+.today_weather__temp {
+    position: relative;
+}
+
+.today_weather__temp sup {
+    font-size: 20px;
+    position: absolute;
+    right: -25px;
+    top: 0;
+}
+
+.today_weather__location {
+    font-weight: 300;
+}
+
+@media all and (min-width: 1024px) {
+    .today_weather {
+        margin-bottom: 150px;
+    }
+}
