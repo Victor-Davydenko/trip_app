@@ -29,10 +29,10 @@
 
 .input_wrapper.filter_input input, .input_wrapper.filter_input select {
     padding: 10px 20px 10px 50px;
-    background: rgb(242, 244, 248);
-    border: 1px solid rgb(242, 244, 248);
+    background: var(--primary_gray);
+    border: 1px solid var(--primary_gray);
     border-radius: 10px;
-    color: #000;
+    color: var(--black);
 }
 
 @media all and (min-width: 1024px) {
