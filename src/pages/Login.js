@@ -2,8 +2,8 @@ import React from 'react';
 
 const Login = () => {
 	return (
-		<div>
-           	LoginPage
+		<div className='loginpage'>
+				Login please to see your schedduled adventures!
 		</div>
 	);
 };
