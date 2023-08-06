@@ -1,0 +1,46 @@
+.filters {
+    padding-bottom: 20px;
+}
+
+.filters .input_wrapper:last-child {
+    margin: 0;
+}
+
+.input_wrapper.filter_input {
+    max-width: 320px;
+    height: 70px;
+    flex-basis: 320px;
+}
+
+.input_wrapper.filter_input.search {
+    position: relative;
+}
+
+.input_wrapper.filter_input.search:before {
+    content: url('../../assets/icons/search_icon.svg');
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.input_wrapper.filter_input input::placeholder {
+    color: #000;
+}
+
+.input_wrapper.filter_input input, .input_wrapper.filter_input select {
+    padding: 10px 20px 10px 50px;
+    background: rgb(242, 244, 248);
+    border: 1px solid rgb(242, 244, 248);
+    border-radius: 10px;
+    color: #000;
+}
+
+@media all and (min-width: 1024px) {
+    .filters {
+        display: flex;
+    }
+
+    .filters .input_wrapper:last-child {
+        margin: 0 0 0 20px;
+    }
+}

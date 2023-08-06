@@ -1,0 +1,24 @@
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+}
+
+.input_wrapper.select:before {
+    content: url('../../../assets/icons/dropdown_icon.svg');
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.input_wrapper.form-select:before {
+    content: url('../../../assets/icons/dropdown_icon_gray.svg');
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+}

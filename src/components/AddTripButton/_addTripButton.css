@@ -1,0 +1,21 @@
+.add_trip_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 245px;
+    height: 225px;
+    background: rgb(242, 244, 248);
+    cursor: pointer;
+}
+
+.add_trip_btn span {
+    position: relative;
+}
+
+.add_trip_btn span:before {
+    content: url('../../assets/icons/plus_icon.svg');
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+}

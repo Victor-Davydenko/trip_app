@@ -1,0 +1,32 @@
+.trip {
+    cursor: pointer;
+    width: 245px;
+    min-width: 245px;
+    border: 1px solid rgb(242, 244, 248);
+}
+
+.trip.active {
+    border: 1px solid blue;
+}
+
+.trip__img img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    min-height: 225px;
+    max-height: 225px;
+    object-fit: cover;
+}
+
+.trip__info {
+    padding: 25px;
+}
+
+.trip__destination {
+    margin-bottom: 10px;
+}
+
+.trip__dates {
+    color: rgb(152, 152, 152);
+    font-size: 12px;
+}
