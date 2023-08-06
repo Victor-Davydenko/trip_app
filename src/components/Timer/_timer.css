@@ -1,0 +1,18 @@
+.timer {
+    color: #fff;
+    font-size: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.timer > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timer > div span:last-child {
+    font-size: 12px;
+    color: rgb(152, 152, 152);
+    margin-top: 10px;
+}
