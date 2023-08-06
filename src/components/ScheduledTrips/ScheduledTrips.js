@@ -30,7 +30,7 @@ const ScheduledTrips = () => {
 	const filteredAndSortedTrips = sortedTrips.filter((trip) => trip.city.toLowerCase().includes(searchTripQuery.toLowerCase()));
 
 	return (
-		<div className='scheduled_trips'>
+		<li className='scheduled_trips'>
 			{filteredAndSortedTrips.length ? (filteredAndSortedTrips.map(({
 				city, startDate, endDate, imageUrl, isSelected, id,
 			}) => {
@@ -46,7 +46,7 @@ const ScheduledTrips = () => {
 					/>
 				);
 			})) : <NothingFound />}
-		</div>
+		</li>
 	);
 };
 

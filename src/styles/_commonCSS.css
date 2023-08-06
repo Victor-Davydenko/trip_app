@@ -19,9 +19,13 @@ body {
     margin-right: 15px;
 }
 
-p {
+p, ul, li {
     margin: 0;
     padding: 0;
+}
+
+li {
+    list-style: none;
 }
 
 .layout {

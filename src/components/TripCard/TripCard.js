@@ -9,7 +9,7 @@ const TripCard = (props) => {
 	startDate = startDate.split('-').reverse().join('.');
 	endDate = endDate.split('-').reverse().join('.');
 	return (
-		<div className={isSelected ? 'trip active' : 'trip'} onClick={() => dispatch(getWeather(props))}>
+		<li className={isSelected ? 'trip active' : 'trip'} onClick={() => dispatch(getWeather(props))}>
 			<div className='trip__img'>
 				<img src={image} alt={city}/>
 			</div>
@@ -21,7 +21,7 @@ const TripCard = (props) => {
 					{startDate} - {endDate}
 				</span>
 			</div>
-		</div>
+		</li>
 	);
 };
 
