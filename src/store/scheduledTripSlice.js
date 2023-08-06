@@ -23,7 +23,6 @@ const scheduledTripSlice = createSlice({
 			state.allScheduledTrips.push(payload);
 		},
 		selectTrip(state, { payload }) {
-			console.log(payload);
 			state.allScheduledTrips = state.allScheduledTrips
 				.map((trip) => (trip.id === payload ? { ...trip, isSelected: true } : { ...trip, isSelected: false }));
 		},
