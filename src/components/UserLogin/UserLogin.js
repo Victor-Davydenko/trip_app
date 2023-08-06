@@ -41,7 +41,7 @@ const UserLogin = () => {
 		<div className='userlogin'>
 			<div id='login'></div>
 			{Object.keys(user).length ? <>
-				<div className='avatar-wrapper'>
+				<div className='avatar_wrapper'>
 					<img src={user.picture} alt='avatar' className='avatar' />
 				</div>
 				<button className='logout-btn' onClick={handleSignOut}>LogOut</button>
