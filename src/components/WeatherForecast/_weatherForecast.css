@@ -1,0 +1,31 @@
+.weather_forecast {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+    padding: 20px 0;
+}
+
+.weather_forecast__single-day {
+    width: 75px;
+    padding: 5px;
+    text-align: center;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.weather_forecast__day {
+    color: rgb(152, 152, 152);
+    font-size: 12px;
+    margin-bottom: auto;
+}
+
+.weather_forecast__temp {
+    margin-top: 20px;
+}
+
+@media all and (min-width: 1024px) {
+    .weather_forecast {
+        width: 75%;
+    }
+}
