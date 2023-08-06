@@ -15,8 +15,8 @@
 }
 
 .weather_forecast__day {
-    color: rgb(152, 152, 152);
-    font-size: 12px;
+    color: var(--dark_gray);
+    font-size: var(--fz12);
     margin-bottom: auto;
 }
 

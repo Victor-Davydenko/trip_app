@@ -1,5 +1,5 @@
 .timer {
-    color: #fff;
+    color: var(--white);
     font-size: 40px;
     display: flex;
     justify-content: space-around;
@@ -12,7 +12,7 @@
 }
 
 .timer > div span:last-child {
-    font-size: 12px;
-    color: rgb(152, 152, 152);
+    font-size: var(--fz12);
+    color: var(--dark_gray);
     margin-top: 10px;
 }
