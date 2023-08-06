@@ -1,6 +1,5 @@
 import React from 'react';
 import { useField } from 'formik';
-import 'react-datepicker/dist/react-datepicker.css';
 
 const DatePickerField = ({
 	required, name, label, id, ...props

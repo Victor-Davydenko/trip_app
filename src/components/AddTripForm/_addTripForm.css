@@ -8,8 +8,8 @@
     height: inherit;
     width: 100%;
     font-size: 20px;
-    color: rgb(217, 217, 217);
-    border: 1px solid rgb(217, 217, 217);
+    color: var(--dark_gray);
+    border: 1px solid var(--dark_gray);
     padding: 0 5px;
 }
 
@@ -21,12 +21,12 @@
 
 .input_wrapper label.required:before {
     content: '*';
-    color: #f00;
+    color: var(--red);
 }
 
 .input_wrapper .error {
-    font-size: 12px;
-    color: #f00;
+    font-size: var(--fz12);
+    color: var(--red);
 }
 
 .form_btns {
@@ -35,17 +35,17 @@
     align-items: center;
     padding-top: 25px;
     margin: 0 -15px;
-    border-top: 1px solid rgb(242, 244, 248);
+    border-top: 1px solid var(--primary_gray);
 }
 
 .form_btns__btn {
-    background: #fff;
-    border: 1px solid rgb(242, 244, 248);
+    background: var(--white);
+    border: 1px solid var(--primary_gray);
     padding: 10px 15px;
     cursor: pointer;
 }
 
 .form_btns__btn--submit {
-    background: rgb(68, 142, 267);
-    color: #fff;
+    background: var(--blue);
+    color: var(--white);
 }

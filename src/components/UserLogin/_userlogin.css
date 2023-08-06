@@ -2,10 +2,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #fff;
+    color: var(--white);
 }
 
-.avatar-wrapper {
+.avatar_wrapper {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -13,14 +13,14 @@
     margin-bottom: 10px;
 }
 
-.avatar-wrapper .avatar {
+.avatar_wrapper .avatar {
     width: 100%;
     height: auto;
     object-fit: cover;
 }
 
 .logout-btn {
-    background: #fff;
+    background: var(--white);
     outline: none;
     border: none;
     border-radius: 2px;

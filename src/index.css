@@ -1,40 +1,17 @@
 @import "components/Header/_header.css";
 @import "components/Logo/_logo.css";
 @import "components/UserLogin/_userlogin.css";
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-.container {
-  width: 100%;
-  max-width: 1270px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-.main {
-  padding: 20px 30px;
-}
-
-.main .content {
-  background: antiquewhite;
-}
-
-.sidebar {
-  padding: 20px 15px;
-}
-
-.sidebar .content {
-  background: blanchedalmond;
-}
+@import "components/TripCard/_tripCard.css";
+@import "components/ScheduledTrips/_scheduledTrips.css";
+@import "components/AddTripButton/_addTripButton.css";
+@import "components/Modal/_modal.css";
+@import "components/AddTripForm/_addTripForm.css";
+@import "components/TodayWeather/_todayWeather.css";
+@import "components/WeatherForecast/_weatherForecast.css";
+@import "components/Timer/_timer.css";
+@import "components/FilterBar/_filters.css";
+@import "components/common/SelectField/_select.css";
+@import "components/NothingFound/_nothingFound.css";
+@import "styles/_commonCSS.css";
+@import "styles/_homePage.css";
+@import "styles/_loginPage.css";

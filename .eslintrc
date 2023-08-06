@@ -23,6 +23,7 @@
     "no-param-reassign": "off",
     "brace-style": "off",
     "class-methods-use-this": "off",
-    "import/no-cycle": "off"
+    "import/no-cycle": "off",
+    "import/no-extraneous-dependencies": "off"
   }
 }

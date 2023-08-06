@@ -1,5 +1,5 @@
 .logo {
-    color: #fff;
+    color: var(--white);
     font-size: 30px;
     text-decoration: none;
 }
@@ -12,6 +12,6 @@
 
 @media screen and (min-width: 768px) {
     .logo {
-        color: #000;
+        color: var(--black);
     }
 }

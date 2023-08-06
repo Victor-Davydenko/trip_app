@@ -4,7 +4,7 @@
     align-items: center;
     width: 245px;
     height: 225px;
-    background: rgb(242, 244, 248);
+    background: var(--primary_gray);
     cursor: pointer;
 }
 
