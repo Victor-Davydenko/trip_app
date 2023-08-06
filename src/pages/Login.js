@@ -3,7 +3,7 @@ import React from 'react';
 const Login = () => {
 	return (
 		<div className='loginpage'>
-				Login please to see your schedduled adventures!
+				Login please to see your scheduled adventures!
 		</div>
 	);
 };

@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import jwtDecode from 'jwt-decode';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { setUser } from '../../store/userSlice';
+import { logOutUser, setUser } from '../../store/userSlice';
 
 const UserLogin = () => {
 	const navigate = useNavigate();
@@ -17,7 +17,7 @@ const UserLogin = () => {
 	};
 
 	const handleSignOut = () => {
-		dispatch(setUser({}));
+		dispatch(logOutUser());
 		document.getElementById('login').hidden = false;
 		localStorage.removeItem('token');
 		navigate('/');
