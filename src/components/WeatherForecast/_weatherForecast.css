@@ -22,6 +22,7 @@
 
 .weather_forecast__temp {
     margin-top: 20px;
+    font-size: 14px;
 }
 
 @media all and (min-width: 1024px) {
