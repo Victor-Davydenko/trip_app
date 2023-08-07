@@ -15,7 +15,6 @@ const useScroll = (ref, sliderData) => {
 			});
 			hasScroll = sliderWidth < childrenWidth;
 			setHasScroll(hasScroll);
-			console.log(hasScroll);
 
 			const slide = slider.childNodes[0];
 			const slideStyles = window.getComputedStyle(slide);
