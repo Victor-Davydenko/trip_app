@@ -6,12 +6,15 @@ import NothingFound from '../NothingFound/NothingFound';
 
 const ScheduledTrips = () => {
 	const { allScheduledTrips, searchTripQuery, sortTripOrder } = useSelector((state) => state.scheduledTripSlice);
-	const firstTrip = allScheduledTrips[0];
+	const selectedTrip = useSelector((state) => state.scheduledTripSlice.allScheduledTrips).find((trip) => trip.isSelected);
+	const {
+		city, startDate, endDate, id,
+	} = selectedTrip;
 	const dispatch = useDispatch();
 
 	useEffect(() => {
 		dispatch(getWeather({
-			city: firstTrip.city, startDate: firstTrip.startDate, endDate: firstTrip.endDate, id: 0,
+			city, startDate, endDate, id,
 		}));
 	}, []);
 
