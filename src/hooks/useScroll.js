@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const useScroll = (ref) => {
+const useScroll = (ref, sliderData) => {
 	const slider = ref.current;
 	const [hasScroll, setHasScroll] = useState();
 	const [slideWidthWithMargin, setSlideWidthWithMargin] = useState();
@@ -15,6 +15,7 @@ const useScroll = (ref) => {
 			});
 			hasScroll = sliderWidth < childrenWidth;
 			setHasScroll(hasScroll);
+			console.log(hasScroll);
 
 			const slide = slider.childNodes[0];
 			const slideStyles = window.getComputedStyle(slide);
@@ -22,7 +23,7 @@ const useScroll = (ref) => {
 			const slideMargin = parseInt(slideStyles.marginRight, 10);
 			setSlideWidthWithMargin(slideMargin + slideWidth);
 		}
-	}, [slider]);
+	}, [slider, sliderData]);
 
 	const onPreviousButtonClick = () => {
 		slider.scrollBy({

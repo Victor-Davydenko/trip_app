@@ -33,7 +33,7 @@ const ScheduledTrips = () => {
 	}, [sortTripOrder, allScheduledTrips]);
 
 	const filteredAndSortedTrips = sortedTrips.filter((trip) => trip.city.toLowerCase().includes(searchTripQuery.toLowerCase()));
-	const { onNextButtonClick, onPreviousButtonClick, hasScroll } = useScroll(sliderRef);
+	const { onNextButtonClick, onPreviousButtonClick, hasScroll } = useScroll(sliderRef, filteredAndSortedTrips);
 
 	return (
 		<>
