@@ -3,6 +3,7 @@
     width: 245px;
     min-width: 245px;
     border: 1px solid var(--primary_gray);
+    margin-right: 50px;
 }
 
 .trip.active {
