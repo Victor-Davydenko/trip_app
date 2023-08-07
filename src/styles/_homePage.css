@@ -27,6 +27,7 @@
     .trips-section {
         display: flex;
         gap: 50px;
+        position: relative;
     }
 
     .sidebar {

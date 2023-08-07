@@ -1,7 +1,35 @@
 .scheduled_trips {
     display: flex;
     flex: 1 1 65%;
-    gap: 50px;
     overflow-x: auto;
     padding-bottom: 30px;
+}
+
+.scheduled_trips::-webkit-scrollbar {
+    display: none;
+}
+
+.slider_btns {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.slider_btns__btn {
+    background: var(--white);
+    border: 1px solid var(--primary_gray);
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.slider_btns__btn:hover {
+    border: 1px solid var(--blue);
+}
+
+@media all and (min-width: 1024px) {
+    .slider_btns {
+        position: absolute;
+        bottom: -50px;
+    }
 }
