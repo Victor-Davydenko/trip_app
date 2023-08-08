@@ -5,4 +5,6 @@ const createCitySelectOptionList = (cities) => {
 	}));
 };
 
+export const formatTime = (time) => (time < 10 ? `0${time}` : time);
+
 export default createCitySelectOptionList;
