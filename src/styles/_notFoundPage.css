@@ -1,4 +1,4 @@
-.loginpage {
+.not_found_page {
     font-size: 40px;
     display: flex;
     align-items: center;
@@ -8,7 +8,7 @@
 }
 
 @media all and (min-width: 1024px) {
-    .loginpage {
+    .not_found_page {
         padding: 0 50px;
     }
 }

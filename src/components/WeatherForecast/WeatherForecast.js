@@ -1,6 +1,8 @@
 import React from 'react';
 import { format, parseISO } from 'date-fns';
 import { useSelector } from 'react-redux';
+import ErrorComponent from '../ErrorComponent/ErrorComponent';
+import LoadingComponent from '../LoadingComponent/LoadingComponent';
 
 const ForecastForDay = ({ day }) => {
 	const {
@@ -19,6 +21,14 @@ const ForecastForDay = ({ day }) => {
 
 const WeatherForecast = () => {
 	const { days } = useSelector((state) => state.weatherSlice.weather.byPeriod);
+	const { error, isLoading } = useSelector((state) => state.weatherSlice);
+
+	if (error) {
+		return <ErrorComponent color='black' />;
+	}
+	if (isLoading) {
+		return <LoadingComponent color='black' />;
+	}
 	return (
 		<ul className='weather_forecast'>
 			{days && days.map((day, index) => <ForecastForDay key={index} day={day} />)}

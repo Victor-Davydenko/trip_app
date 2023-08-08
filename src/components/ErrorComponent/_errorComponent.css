@@ -1,0 +1,6 @@
+.error_component {
+    text-align: center;
+    font-size: 20px;
+    color: var(--white);
+    padding: 30px 0;
+}
