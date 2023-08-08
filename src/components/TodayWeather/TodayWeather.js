@@ -2,15 +2,19 @@ import React from 'react';
 import { format } from 'date-fns';
 import { useSelector } from 'react-redux';
 import ErrorComponent from '../ErrorComponent/ErrorComponent';
+import LoadingComponent from '../LoadingComponent/LoadingComponent';
 
 const TodayWeather = () => {
 	const today = format(new Date(), 'EEEE');
 	const todayWeather = useSelector((state) => state.weatherSlice.weather.today);
-	const { error } = useSelector((state) => state.weatherSlice);
+	const { error, isLoading } = useSelector((state) => state.weatherSlice);
 	const { icon } = todayWeather.days[0];
 	const { temp } = todayWeather.days[0];
 	if (error) {
 		return <ErrorComponent />;
+	}
+	if (isLoading) {
+		return <LoadingComponent />;
 	}
 	return (
 		<div className='today_weather'>
