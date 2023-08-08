@@ -28,6 +28,7 @@ const UserLogin = () => {
 			const userInfo = jwtDecode(savedToken);
 			dispatch(setUser(userInfo));
 			document.getElementById('login').hidden = true;
+			navigate('/home');
 		}
 		/* global google */
 		google.accounts.id.initialize({
