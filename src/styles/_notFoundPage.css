@@ -1,0 +1,14 @@
+.not_found_page {
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    text-align: center;
+}
+
+@media all and (min-width: 1024px) {
+    .not_found_page {
+        padding: 0 50px;
+    }
+}
