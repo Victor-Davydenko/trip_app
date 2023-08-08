@@ -8,5 +8,7 @@
 }
 
 @media all and (min-width: 1024px) {
-    padding: 0 50px;
+    .loginpage {
+        padding: 0 50px;
+    }
 }
