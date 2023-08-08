@@ -33,7 +33,7 @@ const store = configureStore({
 				ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
 			},
 		},
-	).concat(logger, addTripMiddleware),
+	).concat(addTripMiddleware),
 });
 
 export const persistor = persistStore(store);
