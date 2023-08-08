@@ -16,3 +16,4 @@
 @import "styles/_homePage.css";
 @import "styles/_loginPage.css";
 @import "styles/_notFoundPage.css";
+@import "components/ErrorComponent/_errorComponent.css";

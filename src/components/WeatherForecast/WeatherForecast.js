@@ -1,6 +1,7 @@
 import React from 'react';
 import { format, parseISO } from 'date-fns';
 import { useSelector } from 'react-redux';
+import ErrorComponent from '../ErrorComponent/ErrorComponent';
 
 const ForecastForDay = ({ day }) => {
 	const {
@@ -19,6 +20,11 @@ const ForecastForDay = ({ day }) => {
 
 const WeatherForecast = () => {
 	const { days } = useSelector((state) => state.weatherSlice.weather.byPeriod);
+	const { error } = useSelector((state) => state.weatherSlice);
+
+	if (error) {
+		return <ErrorComponent color='black' />;
+	}
 	return (
 		<ul className='weather_forecast'>
 			{days && days.map((day, index) => <ForecastForDay key={index} day={day} />)}
