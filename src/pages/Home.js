@@ -1,4 +1,5 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import ScheduledTrips from '../components/ScheduledTrips/ScheduledTrips';
 import TodayWeather from '../components/TodayWeather/TodayWeather';
 import WeatherForecast from '../components/WeatherForecast/WeatherForecast';
@@ -9,6 +10,7 @@ import Timer from '../components/Timer/Timer';
 import FilterBar from '../components/FilterBar/FilterBar';
 
 const Home = () => {
+	const selectedTrip = useSelector((state) => state.scheduledTripSlice.allScheduledTrips).find((trip) => trip.isSelected);
 	return (
 		<div className='homepage'>
 			<div className='main'>
@@ -26,8 +28,11 @@ const Home = () => {
 			</div>
 			<div className='sidebar'>
 				<div className='sidebar__inner'>
-					<TodayWeather />
-					<Timer />
+					{selectedTrip !== undefined
+						? <>
+							<TodayWeather />
+							<Timer />
+						</> : null}
 				</div>
 			</div>
 		</div>
