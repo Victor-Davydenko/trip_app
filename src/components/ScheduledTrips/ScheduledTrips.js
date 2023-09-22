@@ -8,16 +8,15 @@ import useScroll from '../../hooks/useScroll';
 const ScheduledTrips = () => {
 	const { allScheduledTrips, searchTripQuery, sortTripOrder } = useSelector((state) => state.scheduledTripSlice);
 	const selectedTrip = useSelector((state) => state.scheduledTripSlice.allScheduledTrips).find((trip) => trip.isSelected);
-	const {
-		city, startDate, endDate, id,
-	} = selectedTrip;
 	const sliderRef = useRef();
 	const dispatch = useDispatch();
 
 	useEffect(() => {
-		dispatch(getWeather({
-			city, startDate, endDate, id,
-		}));
+		if (selectedTrip) {
+			dispatch(getWeather({
+				city: selectedTrip.city, startDate: selectedTrip.startDate, endDate: selectedTrip.endDate, id: selectedTrip.id,
+			}));
+		}
 	}, []);
 
 	const sortedTrips = useMemo(() => {
@@ -32,7 +31,7 @@ const ScheduledTrips = () => {
 		});
 	}, [sortTripOrder, allScheduledTrips]);
 
-	const filteredAndSortedTrips = sortedTrips.filter((trip) => trip.city.toLowerCase().includes(searchTripQuery.toLowerCase()));
+	const filteredAndSortedTrips = sortedTrips.filter((trip) => trip?.city?.toLowerCase().includes(searchTripQuery.toLowerCase()));
 	const { onNextButtonClick, onPreviousButtonClick, hasScroll } = useScroll(sliderRef, filteredAndSortedTrips);
 
 	return (
